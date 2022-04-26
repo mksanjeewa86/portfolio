@@ -1,11 +1,13 @@
-import { Navbar } from "./components";
-import Home from "./components/Home";
+import { Navbar, Home, About, Skills, Work } from "./components";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Home />
+      <About />
+      <Skills />
+      <Work />
     </div>
   );
 }

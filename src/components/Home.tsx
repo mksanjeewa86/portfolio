@@ -1,6 +1,6 @@
 import { HiArrowNarrowRight } from "../assets/icons";
 
-const Home = () => {
+export const Home = () => {
   return (
     <div className="bg-[#0a192f] w-full h-screen">
       {/* container */}
@@ -27,5 +27,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;
