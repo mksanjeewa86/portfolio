@@ -2,7 +2,7 @@ import { HiArrowNarrowRight } from "../assets/icons";
 
 export const Home = () => {
   return (
-    <div className="bg-[#0a192f] w-full h-screen">
+    <div id="home" className="bg-[#0a192f] w-full h-screen">
       {/* container */}
       <div className="max-w-[1000px] mx-auto px-8 flex-col flex justify-center h-full">
         <p className="text-pink-600">Hi, my name is</p>
