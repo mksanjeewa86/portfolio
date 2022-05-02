@@ -4,17 +4,28 @@ import {
   FaLinkedin,
   FaGithub,
   FaFacebook,
+  FaInstagram,
+  FaTwitter,
 } from "react-icons/fa";
-import { HiArrowNarrowRight, HiOutlineMail } from "react-icons/hi";
+import { HiArrowNarrowRight } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import {
+  BiMessageRoundedError,
+  BiMessageCheck,
+  BiMessageRoundedX,
+} from "react-icons/bi";
 
 export {
   FaFacebook,
+  FaTwitter,
   FaBars,
   FaTimes,
   HiArrowNarrowRight,
   FaLinkedin,
   FaGithub,
-  HiOutlineMail,
   BsFillPersonLinesFill,
+  FaInstagram,
+  BiMessageRoundedError,
+  BiMessageCheck,
+  BiMessageRoundedX,
 };

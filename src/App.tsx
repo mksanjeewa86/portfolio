@@ -1,12 +1,5 @@
-import {
-  Navbar,
-  Home,
-  About,
-  Skills,
-  Work,
-  Contact,
-  Footer,
-} from "./components";
+import { Navbar, Home, About, Skills, Contact, Footer } from "./components";
+import { History, Other, Work } from "./components/history";
 
 function App() {
   return (
@@ -14,8 +7,10 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Skills />
+      <History />
       <Work />
+      <Skills />
+      <Other />
       <Contact />
       <Footer />
     </div>

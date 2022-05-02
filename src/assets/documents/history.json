@@ -1,0 +1,122 @@
+{
+  "education": [
+    {
+      "title": "Galukagama Vidyalaya, Ratnapura, Sri Lanka",
+      "time": "1992 January ~ 1993 January",
+      "description": "Primary Education",
+      "web": ""
+    },
+    {
+      "title": "Hidellana Kanitu Vidyalaya, Ratnapura, Sri Lanka",
+      "time": "1993 January ~ 1997 May",
+      "description": "Secondary Education",
+      "web": ""
+    },
+    {
+      "title": "Sivali Central College, Ratnapura, Sri Lanka",
+      "time": "1997 May ~ 2006 May",
+      "description": "Higher Education",
+      "web": ""
+    },
+    {
+      "title": "The Open University of Sri Lanka, Nawala, Sri Lanka",
+      "time": "2005 May ~ 2015 December",
+      "description": "Bechelor in Technology - BTech. (Drop-out)",
+      "web": "https://ou.ac.lk/"
+    },
+    {
+      "title": "AIWA Japanese Language Institute, Fukuoka, Japan",
+      "time": "2016 October ~ 2018 March",
+      "description": "Japanese Language Higher Education",
+      "web": "https://www.aiwa.ne.jp/"
+    },
+    {
+      "title": "Japan Electronics College, Shinjuku, Japan",
+      "time": "2020 April ~ 2022 March",
+      "description": "Information System Development",
+      "web": "https://www.jec.ac.jp/"
+    }
+  ],
+  "work": [
+    {
+      "title": "Acrospera Co. Ltd.",
+      "time": "2020 April ~ Now",
+      "description": "Work as a System Engineer",
+      "web": "https://acrospera.com/"
+    }
+  ],
+  "course": [
+    {
+      "title": "Diploma course in Java Programming Development (First Division)",
+      "time": "2008 July ~ 2008 December",
+      "description": "National Youth Services Council, Maharagama, Sri Lanka",
+      "web": ""
+    },
+    {
+      "title": "Diploma course in VB.Net Programming (First Division)",
+      "time": "2008 July ~ 2008 December",
+      "description": "National Youth Services Council, Maharagama, Sri Lanka",
+      "web": ""
+    },
+    {
+      "title": "Diploma in Computer Software Engineering",
+      "time": "2003 January ~ 2003 June",
+      "description": "Institute of Professional Computer Studies, Ratnapura, Sri Lanka",
+      "web": ""
+    },
+    {
+      "title": "Diploma in Network Administration",
+      "time": "2010 April",
+      "description": "Turnkey Computer Systems Pvt. Ltd., Sri Lanka",
+      "web": ""
+    },
+    {
+      "title": "Kayo School of Japanese, Colombo, Sri Lanka",
+      "time": "2015 December ~ 2016 June",
+      "description": "Basic Japanese Language Education",
+      "web": "https://www.kayoschool.com/"
+    }
+  ],
+  "exams": [
+    {
+      "title": "情報処理技術者能力認定試験2級第1部",
+      "time": "2018 July",
+      "description": "",
+      "web": "https://shikaku.gr.jp"
+    },
+    {
+      "title": "TOEIC",
+      "time": "2019 April",
+      "description": "Score 800",
+      "web": "https://www.iibc-global.org/toeic"
+    },
+    {
+      "title": "AWS Certified Solutions Architect - Associate",
+      "time": "2022 April",
+      "description": "Score 722. Click title to verify the result",
+      "web": "https://www.credly.com/badges/607a54e8-543c-4859-87d2-8b5722ed0df7/public_url"
+    },
+    {
+      "title": "Japanese Language Proficiency Test - N2",
+      "time": "2020 December",
+      "description": "",
+      "web": ""
+    }
+  ],
+  "other": [
+    {
+      "title": "Leadership for Entrepreneurial and Administrative Development",
+      "post": "Participated as a University delegate",
+      "time": "28th September, 2011 ~ 02nd October, 2011",
+      "description": "Uva Wellassa University, Badulla, Sri Lanka. Conducted by the Ministry of Higher Education, Sri Lanka",
+      "web": ""
+    },
+    {
+      "title": "The World Festival of Youth and Students, Quito, Ecuador",
+      "post": "Participated as a Sri Lankan Representative",
+      "time": "7th December, 2013 ~ 13th December, 2013",
+      "description": "Organized by the World Federation of Democratic Youth (WFDY). Youth Unite Against Imperialism, for a World of Peace, Solidarity and Social Transformation!",
+      "web": ""
+    }
+  ]
+}

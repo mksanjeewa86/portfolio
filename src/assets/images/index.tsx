@@ -11,6 +11,8 @@ import css from "./css.png";
 import aws from "./aws.png";
 import workImg from "./workImg.jpeg";
 import realestate from "./realestate.jpeg";
+import malaka from "./malaka.png";
+import logos from "./logos.png";
 
 export {
   logo,
@@ -26,4 +28,6 @@ export {
   aws,
   workImg,
   realestate,
+  malaka,
+  logos,
 };
