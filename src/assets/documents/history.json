@@ -42,7 +42,29 @@
       "title": "Acrospera Co. Ltd.",
       "time": "2020 April ~ Now",
       "description": "Work as a System Engineer",
-      "web": "https://acrospera.com/"
+      "web": "https://acrospera.com/",
+      "projects": [
+        {
+          "title": "title 1",
+          "time": "2020 April ~ Now",
+          "os": "Windows",
+          "framework": [],
+          "tools": [
+            "VScode",
+            "VB6"
+          ],
+          "description": "desc"
+        },
+        {
+          "title": "title 2",
+          "time": "2020 April ~ Now",
+          "tools": [
+            "VScode",
+            "VB6"
+          ],
+          "description": "desc"
+        }
+      ]
     }
   ],
   "course": [

@@ -1,5 +1,14 @@
-import { Navbar, Home, About, Skills, Contact, Footer } from "./components";
-import { History, Other, Work } from "./components/history";
+import {
+  Navbar,
+  Home,
+  About,
+  Skills,
+  Contact,
+  Footer,
+  History,
+  Other,
+  Work,
+} from "./components";
 
 function App() {
   return (

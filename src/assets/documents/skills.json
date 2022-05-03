@@ -1,0 +1,120 @@
+{
+  "language": [
+    {
+      "name": "Javascript",
+      "level": "9.5"
+    },
+    {
+      "name": "PHP",
+      "level": "8"
+    },
+    {
+      "name": "JAVA",
+      "level": "7"
+    },
+    {
+      "name": "C#",
+      "level": "6"
+    }
+  ],
+  "framework/libraries": [
+    {
+      "name": "React.js",
+      "level": "9.5"
+    },
+    {
+      "name": "Typescript",
+      "level": "9"
+    },
+    {
+      "name": "Node.js",
+      "level": "9.5"
+    },
+    {
+      "name": "Vue.js",
+      "level": "7"
+    },
+    {
+      "name": "Next.js",
+      "level": "8"
+    },
+    {
+      "name": "Laravel",
+      "level": "7"
+    },
+    {
+      "name": "EC-CUBE",
+      "level": "6"
+    },
+    {
+      "name": "Spring Boot",
+      "level": "7"
+    },
+    {
+      "name": "LINE",
+      "level": "9"
+    },
+    {
+      "name": "LARK",
+      "level": "8"
+    }
+  ],
+  "style": [
+    {
+      "name": "CSS",
+      "level": "10"
+    },
+    {
+      "name": "Tailwind",
+      "level": "9.5"
+    },
+    {
+      "name": "Bootstrap",
+      "level": "9"
+    }
+  ],
+  "database": [
+    {
+      "name": "MySQL",
+      "level": "9"
+    },
+    {
+      "name": "Oracle",
+      "level": "9"
+    },
+    {
+      "name": "SQL Server",
+      "level": "9"
+    }
+  ],
+  "blockchain": [
+    {
+      "name": "Ethereum",
+      "level": "8"
+    },
+    {
+      "name": "Tezos",
+      "level": "6"
+    }
+  ],
+  "cloud service": [
+    {
+      "name": "AWS",
+      "level": "9"
+    }
+  ],
+  "other tools": [
+    {
+      "name": "GitHub",
+      "level": "9"
+    },
+    {
+      "name": "Docker",
+      "level": "7"
+    },
+    {
+      "name": "Backlog",
+      "level": "8"
+    }
+  ]
+}

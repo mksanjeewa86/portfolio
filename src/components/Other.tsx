@@ -1,5 +1,5 @@
-import { Node } from "./Node";
-import { history } from "../../assets/documents";
+import { Node } from "./history/Node";
+import { history } from "../assets/documents";
 
 export const Other = () => {
   return (
@@ -11,8 +11,8 @@ export const Other = () => {
           </p>
           <div className="w-full py-8">
             <ol className="relative border-l border-gray-200">
-              {history.other.map((ed: any) => {
-                return <Node {...ed} />;
+              {history.other.map((ed: any, index: any) => {
+                return <Node key={`other_${index}`} {...ed} type="other" />;
               })}
             </ol>
           </div>
