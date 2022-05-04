@@ -19,7 +19,7 @@ interface Project {
 export const Node = (node: workNode) => {
   return (
     <li className="mb-10 ml-6">
-      <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-green-700">
+      <span className="flex absolute -left-3 justify-center items-center w-6 h-6 rounded-full ring-8 ring-gray-900 bg-green-700">
         <svg
           className="w-6 h-6"
           fill="none"
@@ -45,10 +45,10 @@ export const Node = (node: workNode) => {
         )}
       </h3>
       <h2 className="text-blue-500 mb-2 font-bold">{node.post}</h2>
-      <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+      <time className="block mb-2 text-sm font-normal leading-none text-gray-500">
         {node.time}
       </time>
-      <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+      <p className="mb-4 text-base font-normal text-gray-400">
         {node.description}
       </p>
       <div className="p-2 bg-gray-800 rounded-xl pl-4 font-bold">

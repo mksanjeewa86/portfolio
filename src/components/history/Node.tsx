@@ -10,7 +10,7 @@ interface educationNode {
 export const Node = (node: educationNode) => {
   return (
     <li className="mb-6 ml-4">
-      <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+      <span className="flex absolute -left-3 justify-center items-center w-6 h-6 rounded-full ring-8 ring-gray-900 bg-blue-900">
         {node.type === "education" ? (
           <svg
             className="w-6 h-6"
@@ -85,10 +85,10 @@ export const Node = (node: educationNode) => {
         )}
       </h3>
       <h2 className="text-blue-500 mb-2 font-bold">{node.post}</h2>
-      <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+      <time className="block mb-2 text-sm font-normal leading-none text-gray-500">
         {node.time}
       </time>
-      <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+      <p className="mb-4 text-base font-normal text-gray-400">
         {node.description}
       </p>
     </li>
