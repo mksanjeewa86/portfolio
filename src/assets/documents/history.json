@@ -1,70 +1,40 @@
 {
   "education": [
     {
-      "title": "Galukagama Vidyalaya, Ratnapura, Sri Lanka",
+      "title": "Primary Education",
       "time": "1992 January ~ 1993 January",
-      "description": "Primary Education",
+      "description": "Galukagama Vidyalaya, Ratnapura, Sri Lanka",
       "web": ""
     },
     {
-      "title": "Hidellana Kanitu Vidyalaya, Ratnapura, Sri Lanka",
+      "title": "Secondary Education",
       "time": "1993 January ~ 1997 May",
-      "description": "Secondary Education",
+      "description": "Hidellana Kanitu Vidyalaya, Ratnapura, Sri Lanka",
       "web": ""
     },
     {
-      "title": "Sivali Central College, Ratnapura, Sri Lanka",
+      "title": "Higher Education",
       "time": "1997 May ~ 2006 May",
-      "description": "Higher Education",
+      "description": "Sivali Central College, Ratnapura, Sri Lanka",
       "web": ""
     },
     {
-      "title": "The Open University of Sri Lanka, Nawala, Sri Lanka",
+      "title": "Bechelor in Technology - BTech.",
       "time": "2005 May ~ 2015 December",
-      "description": "Bechelor in Technology - BTech. (Drop-out)",
+      "description": "The Open University of Sri Lanka, Nawala, Sri Lanka.(Drop-out)",
       "web": "https://ou.ac.lk/"
     },
     {
-      "title": "AIWA Japanese Language Institute, Fukuoka, Japan",
+      "title": "Japanese Language Higher Education",
       "time": "2016 October ~ 2018 March",
-      "description": "Japanese Language Higher Education",
+      "description": "AIWA Japanese Language Institute, Fukuoka, Japan",
       "web": "https://www.aiwa.ne.jp/"
     },
     {
-      "title": "Japan Electronics College, Shinjuku, Japan",
+      "title": "Information System Development",
       "time": "2020 April ~ 2022 March",
-      "description": "Information System Development",
+      "description": "Japan Electronics College, Shinjuku, Japan",
       "web": "https://www.jec.ac.jp/"
-    }
-  ],
-  "work": [
-    {
-      "title": "Acrospera Co. Ltd.",
-      "time": "2020 April ~ Now",
-      "description": "Work as a System Engineer",
-      "web": "https://acrospera.com/",
-      "projects": [
-        {
-          "title": "title 1",
-          "time": "2020 April ~ Now",
-          "os": "Windows",
-          "framework": [],
-          "tools": [
-            "VScode",
-            "VB6"
-          ],
-          "description": "desc"
-        },
-        {
-          "title": "title 2",
-          "time": "2020 April ~ Now",
-          "tools": [
-            "VScode",
-            "VB6"
-          ],
-          "description": "desc"
-        }
-      ]
     }
   ],
   "course": [
@@ -93,9 +63,9 @@
       "web": ""
     },
     {
-      "title": "Kayo School of Japanese, Colombo, Sri Lanka",
+      "title": "Basic Japanese Language Education",
       "time": "2015 December ~ 2016 June",
-      "description": "Basic Japanese Language Education",
+      "description": "Kayo School of Japanese, Colombo, Sri Lanka",
       "web": "https://www.kayoschool.com/"
     }
   ],
@@ -139,6 +109,20 @@
       "time": "7th December, 2013 ~ 13th December, 2013",
       "description": "Organized by the World Federation of Democratic Youth (WFDY). Youth Unite Against Imperialism, for a World of Peace, Solidarity and Social Transformation!",
       "web": ""
+    },
+    {
+      "title": "Inter-University Progressive Student Federation, Sri Lanka",
+      "post": "President",
+      "time": "2013 ~ 2015",
+      "description": "",
+      "web": ""
+    },
+    {
+      "title": "福岡友情ネットワーク, Fukuoka University, Fukuoka, Japan",
+      "post": "Team Member",
+      "time": "2016 ~ 2017",
+      "description": "This project is mainly working to support international students",
+      "web": "https://www.breakthrough-asia.com/"
     }
   ]
 }

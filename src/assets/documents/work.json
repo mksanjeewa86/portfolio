@@ -1,0 +1,124 @@
+{
+  "work": [
+    {
+      "title": "Software Developer",
+      "time": "2011 March ~ 2012 December",
+      "description": "E-bridge Solutions, Mount Lavinia, Sri Lanka",
+      "web": "",
+      "projects": [
+        {
+          "name": "Vehicle Parts Management System with EC site",
+          "period": "2011 March ～ 2012 January",
+          "tools": [
+            "MySQL",
+            "JavaScript",
+            "PHP",
+            "HTML",
+            "CSS"
+          ],
+          "description": "Involved as a Full-stack developer. Developed the Vehicle Management System and visit the customer site for after services and maintenance."
+        },
+        {
+          "name": "Sri Lanka Karate Association (Official Web)",
+          "period": "2012 January ～ 2012 December",
+          "tools": [
+            "PHP",
+            "HTML",
+            "CSS"
+          ],
+          "description": "Official home page for Sri Lanka Karate Association. All pages were static."
+        }
+      ]
+    },
+    {
+      "title": "System Engineer",
+      "time": "2020 April ~ Now",
+      "description": "Acrospera Co. Ltd.",
+      "web": "https://acrospera.com/",
+      "projects": [
+        {
+          "name": "OJT (JAVA)",
+          "period": "2020 April ～ 2020 June",
+          "tools": [
+            "Oracle",
+            "JavaScript",
+            "JSP",
+            "Java",
+            "HTML",
+            "CSS",
+            "Eclipse",
+            "Spring Boot"
+          ],
+          "description": "・Programming basics・Java basics・Oracle basics・Console Applicattion Development・Web Application Development・Web Application Project (Group)"
+        },
+        {
+          "name": "Club OnOff Globeride",
+          "period": "2020 July ～ 2020 October",
+          "tools": [
+            "MySQL",
+            "PHP",
+            "VSCode",
+            "TortoiseGit",
+            "EC-CUBE"
+          ],
+          "description": "Sports goods EC site maintenance project"
+        },
+        {
+          "name": "Ticket PIA",
+          "period": "2020 November ～ 2021 January",
+          "tools": [
+            "SQL Server",
+            "C#",
+            "Visual Studio 2019",
+            "VSCode",
+            ".NET Framework",
+            "Vue.js"
+          ],
+          "description": "・Maintenance・Documentation・Testing"
+        },
+        {
+          "name": "Recruitment Management System",
+          "period": "2021 January ～ Now",
+          "tools": [
+            "MySQL",
+            "Node.js",
+            "Typescript",
+            "React.js",
+            "VSCode",
+            "AWS",
+            "LINE"
+          ],
+          "description": "Recruitment Management System for Acro Holdings. Involved as a Full-stack developer."
+        },
+        {
+          "name": "Entrysheet System",
+          "period": "2021 September ～ Now",
+          "tools": [
+            "MySQL",
+            "Node.js",
+            "Typescript",
+            "React.js",
+            "VSCode",
+            "AWS"
+          ],
+          "description": "Entrysheet System for Acro Holdings. Involved as a Full-stack developer."
+        },
+        {
+          "name": "Blockchain Development",
+          "period": "2022 January ～ Now",
+          "tools": [
+            "LIGO",
+            "Solidity",
+            "Typescript",
+            "React.js",
+            "VSCode",
+            "AWS",
+            "Next.js",
+            "Tailwind CSS"
+          ],
+          "description": "Blockchain development project for Ethereum and Tezos network."
+        }
+      ]
+    }
+  ]
+}

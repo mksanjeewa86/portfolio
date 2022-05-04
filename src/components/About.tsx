@@ -19,11 +19,14 @@ export const About = () => {
           </div>
           <div>
             <p>
-              I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations. What would you do if you had
-              a software expert available at your fingertips?
+              Highly motivated, skilled and hard working person with hands on
+              experience on software development using React.js, Node.js,
+              JavaScript, PHP and blockchain development on Ethereum and Tezos
+              networks. Excellent communication skills and presentation skills
+              in Sinhalese, English and Japanese. Active Team player and a Fast
+              learner. Team-oriented with the ability to adjust to new
+              environments quickly. A fast learner and also a reliable employee
+              with an excellent work ethic and positive attitude.
             </p>
           </div>
         </div>

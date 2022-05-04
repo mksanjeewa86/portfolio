@@ -7,7 +7,7 @@ import {
   FaTwitter,
   FaInstagram,
 } from "../assets/icons";
-import { logos } from "../assets/images";
+import { logo } from "../assets/images";
 import { useState } from "react";
 import { Link } from "react-scroll";
 
@@ -19,7 +19,7 @@ export const Navbar = () => {
   return (
     <nav className="w-full fixed h-[80px] bg-[#0a192f] px-4 flex justify-between items-center text-gray-300 z-50">
       <div>
-        <img src={logos} alt="logo" className="w-[50px]" />
+        <img src={logo} alt="logo" className="w-[50px]" />
       </div>
 
       {/* menu */}
@@ -74,7 +74,7 @@ export const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <img src={logos} alt="logo" className="w-[80px] mb-10" />
+        <img src={logo} alt="logo" className="w-[80px] mb-10" />
         <li className="py-6 text-4xl">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home

@@ -5,6 +5,6 @@ export * from "./Skills";
 export * from "./Contact";
 export * from "./Footer";
 export * from "./Modal";
-export * from "./Work";
+export * from "./work/Work";
 export * from "./Other";
 export * from "./history/History";

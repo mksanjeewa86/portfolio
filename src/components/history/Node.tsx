@@ -5,19 +5,11 @@ interface educationNode {
   time: string;
   post?: string;
   description: string;
-  projects?: [];
-}
-
-interface Project {
-  title: string;
-  time: string;
-  tools: string[];
-  description: string;
 }
 
 export const Node = (node: educationNode) => {
   return (
-    <li className="mb-10 ml-6">
+    <li className="mb-6 ml-4">
       <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
         {node.type === "education" ? (
           <svg
@@ -34,21 +26,6 @@ export const Node = (node: educationNode) => {
               stroke-linejoin="round"
               stroke-width="2"
               d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-            ></path>
-          </svg>
-        ) : node.type === "work" ? (
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
             ></path>
           </svg>
         ) : node.type === "exam" ? (
@@ -98,7 +75,7 @@ export const Node = (node: educationNode) => {
           </svg>
         )}
       </span>
-      <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+      <h3 className="flex items-center mb-1 text-lg font-semibold text-white">
         {node.web !== "" ? (
           <a target="_blank" rel="noreferrer" href={node.web}>
             {node.title}
@@ -114,9 +91,6 @@ export const Node = (node: educationNode) => {
       <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
         {node.description}
       </p>
-      {node.projects?.map((project: Project, index: any) => {
-        return <div key={`project_${index}`}>{project.description}</div>;
-      })}
     </li>
   );
 };
