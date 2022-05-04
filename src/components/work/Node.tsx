@@ -45,7 +45,7 @@ export const Node = (node: workNode) => {
         )}
       </h3>
       <h2 className="text-blue-500 mb-2 font-bold">{node.post}</h2>
-      <time className="block mb-2 text-sm font-normal leading-none text-gray-500">
+      <time className="block mb-2 text-sm font-normal leading-none text-gray-500 italic">
         {node.time}
       </time>
       <p className="mb-4 text-base font-normal text-gray-400">

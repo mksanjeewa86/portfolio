@@ -75,7 +75,7 @@ export const Node = (node: educationNode) => {
           </svg>
         )}
       </span>
-      <h3 className="flex items-center mb-1 text-lg font-semibold text-white">
+      <h3 className="flex items-center mb-1 text-lg font-semibold text-green-500">
         {node.web !== "" ? (
           <a target="_blank" rel="noreferrer" href={node.web}>
             {node.title}
@@ -85,10 +85,10 @@ export const Node = (node: educationNode) => {
         )}
       </h3>
       <h2 className="text-blue-500 mb-2 font-bold">{node.post}</h2>
-      <time className="block mb-2 text-sm font-normal leading-none text-gray-500">
+      <time className="block mb-2 text-sm font-normal leading-none text-blue-500 italic">
         {node.time}
       </time>
-      <p className="mb-4 text-base font-normal text-gray-400">
+      <p className="mb-4 text-base font-normal text-white">
         {node.description}
       </p>
     </li>
