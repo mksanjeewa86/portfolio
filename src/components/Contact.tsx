@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { Modal } from "../components";
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 type ContactData = {
   name: string;
@@ -10,6 +11,8 @@ type ContactData = {
 
 export const Contact = () => {
   const [modal, setModal] = useState(false);
+  const [error, setError] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -18,9 +21,15 @@ export const Contact = () => {
     formState: { errors },
   } = useForm<ContactData>();
 
-  const onSubmit = handleSubmit(async (data: ContactData) => {
-    setModal(true);
-    console.log(watch());
+  const onSubmit = handleSubmit(async () => {
+    emailjs
+      .send("service_sfk7fdk", "template_o4n313f", watch(), "gDPc-jxkAxzJfY0oi")
+      .then((result: any) => {
+        setModal(true);
+      })
+      .catch((error: any) => {
+        setError(true);
+      });
   });
 
   return (
@@ -96,6 +105,23 @@ export const Contact = () => {
             onClick={() => {
               setModal(false);
               reset();
+            }}
+          >
+            Close
+          </button>
+        </Modal>
+      )}
+      {error && (
+        <Modal
+          title="Error!"
+          description="Error sending message.."
+          type="error"
+        >
+          <button
+            className="bg-red-500 text-white p-3 w-20 rounded-lg"
+            onClick={() => {
+              setModal(false);
+              setError(false);
             }}
           >
             Close
