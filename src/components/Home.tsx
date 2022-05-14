@@ -2,7 +2,7 @@ import { malaka } from "../assets/images";
 import Typed from "react-typed";
 import { resume } from "../assets/documents";
 
-export const Home = () => {
+export const Home: React.FC = () => {
   return (
     <div id="home" className="bg-[#0a192f] w-full h-screen">
       <div className="flex flex-col justify-center w-full h-full">
@@ -21,7 +21,7 @@ export const Home = () => {
                 strings={[
                   "Full Stack Developer",
                   "Software Engineer",
-                  "Infra Engineer",
+                  "Blockchain Engineer",
                   "Frontend Developer",
                   "Backend Engineer",
                 ]}

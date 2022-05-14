@@ -1,7 +1,7 @@
 import { FaGithub } from "../assets/icons";
 import { MobileSocialIcon } from "./navbar/MobileSocialIcon";
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
   return (
     <div className="bg-[#0a192f] text-gray-300 w-full flex">
       <div className="mx-auto p-4 flex flex-col justify-center w-full h-full bg-white">

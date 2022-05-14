@@ -1,6 +1,6 @@
 import { Education, Course, Exams } from ".";
 
-export const History = () => {
+export const History: React.FC = () => {
   return (
     <div id="history" className="w-full bg-[#0a192f] text-gray-300">
       <div className="flex flex-col justify-center items-center w-full h-full">

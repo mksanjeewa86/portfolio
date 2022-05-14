@@ -6,7 +6,7 @@ import {
   FaInstagram,
 } from "../../assets/icons";
 
-export const SocialIcon = () => {
+export const SocialIcon: React.FC = () => {
   return (
     <div className="hidden lg:flex fixed flex-col left-0 top-[35%]">
       <ul>

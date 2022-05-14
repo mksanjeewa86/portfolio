@@ -1,13 +1,6 @@
-interface educationNode {
-  title: string;
-  type: string;
-  web: string;
-  time: string;
-  post?: string;
-  description: string;
-}
+import { educationNode } from "../../types";
 
-export const Node = (node: educationNode) => {
+export const Node: React.FC<educationNode> = (node: educationNode) => {
   return (
     <li className="mb-6 ml-4">
       <span className="flex absolute -left-3 justify-center items-center w-6 h-6 rounded-full ring-8 ring-gray-900 bg-blue-900">

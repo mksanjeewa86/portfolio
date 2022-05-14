@@ -5,7 +5,7 @@ import { MenuItem } from "./MenuItem";
 import { MobileSocialIcon } from "./MobileSocialIcon";
 import { SocialIcon } from "./SocialIcon";
 
-export const Navbar = () => {
+export const Navbar: React.FC = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleClick = () => setToggle(!toggle);

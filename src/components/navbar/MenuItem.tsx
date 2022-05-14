@@ -1,13 +1,7 @@
 import { Link } from "react-scroll";
+import { IMenu } from "../../types";
 
-interface MenuI {
-  to: string;
-  name: string;
-  class?: string;
-  click?: () => void;
-}
-
-export const MenuItem = (menu: MenuI) => {
+export const MenuItem: React.FC<IMenu> = (menu: IMenu) => {
   return (
     <li className={menu.class}>
       <Link onClick={menu.click} to={menu.to} smooth={true} duration={500}>

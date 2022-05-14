@@ -1,22 +1,7 @@
 import { ProjectNode } from "./ProjectNode";
+import { workNode, Project } from "../../types";
 
-interface workNode {
-  title: string;
-  web: string;
-  time: string;
-  post?: string;
-  description: string;
-  projects?: Project[];
-}
-
-interface Project {
-  name: string;
-  period: string;
-  tools: string[];
-  description: string;
-}
-
-export const Node = (node: workNode) => {
+export const Node: React.FC<workNode> = (node: workNode) => {
   return (
     <li className="mb-10 ml-6">
       <span className="flex absolute -left-3 justify-center items-center w-6 h-6 rounded-full ring-8 ring-gray-900 bg-green-700">
@@ -55,7 +40,7 @@ export const Node = (node: workNode) => {
         Projects Involved
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
-        {node.projects?.map((project: any) => {
+        {node.projects?.map((project: Project) => {
           return <ProjectNode {...project} />;
         })}
       </div>

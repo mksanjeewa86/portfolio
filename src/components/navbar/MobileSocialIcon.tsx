@@ -6,7 +6,7 @@ import {
   FaInstagram,
 } from "../../assets/icons";
 
-export const MobileSocialIcon = () => {
+export const MobileSocialIcon: React.FC = () => {
   return (
     <div className="flex justify-center p-4 lg:hidden border-t-[1px] border-white border-opacity-20">
       <div className="w-[40px] h-[40px] flex justify-center items-center bg-blue-900 hover:bg-blue-800 mx-1">

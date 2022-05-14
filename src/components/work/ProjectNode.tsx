@@ -1,11 +1,6 @@
-interface Project {
-  name: string;
-  period: string;
-  tools: string[];
-  description: string;
-}
+import { Project } from "../../types";
 
-export const ProjectNode = (project: Project) => {
+export const ProjectNode: React.FC<Project> = (project: Project) => {
   return (
     <div className="p-2 rounded-xl border-[0.5px] border-green-500">
       <div className="italic text-xs text-green-500">{project.period}</div>

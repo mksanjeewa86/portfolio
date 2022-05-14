@@ -1,8 +1,10 @@
 import { skills } from "../assets/documents";
+import { ISkill } from "../types";
 
-export const Skills = () => {
-  const keys: any = Object.keys(skills);
+export const Skills: React.FC = () => {
+  const keys: string[] = Object.keys(skills);
   const values: any = Object.values(skills);
+
   return (
     <div id="skills" className="w-full bg-[#0a192f] text-gray-300">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
@@ -12,14 +14,14 @@ export const Skills = () => {
           </p>
           <p className="py-4">Some of the technologies I've worked with</p>
         </div>
-        {keys.map((element: any, index: any) => {
+        {keys.map((element: string, index: number) => {
           return (
             <>
               <div className="uppercase text-xs font-bold border-b-2 border-gray-800">
                 {element}
               </div>
               <div className="w-full grid grid-cols-3 sm:grid-cols-6 gap-4 text-center py-8">
-                {values[index].map((el: any, ind: any) => {
+                {values[index].map((el: ISkill, ind: number) => {
                   return (
                     <div
                       key={`skill_${ind}`}

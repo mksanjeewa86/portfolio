@@ -2,14 +2,10 @@ import { useForm } from "react-hook-form";
 import { Modal } from "../components";
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { ContactData } from "../types";
+import { serviceID, templateID, publicKey } from "../utils/config";
 
-type ContactData = {
-  name: string;
-  email: string;
-  message: string;
-};
-
-export const Contact = () => {
+export const Contact: React.FC = () => {
   const [modal, setModal] = useState(false);
   const [error, setError] = useState(false);
 
@@ -23,7 +19,7 @@ export const Contact = () => {
 
   const onSubmit = handleSubmit(async () => {
     emailjs
-      .send("service_sfk7fdk", "template_o4n313f", watch(), "gDPc-jxkAxzJfY0oi")
+      .send(serviceID, templateID, watch(), publicKey)
       .then((result: any) => {
         setModal(true);
       })
