@@ -15,12 +15,13 @@ export const Footer: React.FC = () => {
           <div className="font-bold text-lg text-red-300 underline">
             Tech stack of this site
           </div>
-          <ul className="flex flex-row text-blue-300">
+          <ul className="flex flex-row text-blue-300 flex-wrap justify-center">
             <li>React.js</li>
             <li>Typescript</li>
             <li>S3</li>
             <li>CloudFront</li>
             <li>Certificate Manager</li>
+            <li>Route53</li>
             <li>Tailwind CSS</li>
             <li>GitHub</li>
           </ul>
