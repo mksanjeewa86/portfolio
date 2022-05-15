@@ -22,6 +22,7 @@ export const Footer: React.FC = () => {
             <li>CloudFront</li>
             <li>Certificate Manager</li>
             <li>Tailwind CSS</li>
+            <li>GitHub</li>
           </ul>
           <div className="flex flex-row">
             <div>View code&nbsp;</div>
