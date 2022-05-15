@@ -31,7 +31,7 @@ export const Contact: React.FC = () => {
   return (
     <div
       id="contact"
-      className="bg-[#0a192f] w-full flex justify-center items-center p-4"
+      className="bg-[#0a192f] min-h-screen w-full flex justify-center items-center p-4"
     >
       <form
         onSubmit={onSubmit}

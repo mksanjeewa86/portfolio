@@ -34,6 +34,7 @@ export type IMenu = {
   to: string;
   type?: string;
   name: string;
+  active?: boolean;
   click?: () => void;
 };
 

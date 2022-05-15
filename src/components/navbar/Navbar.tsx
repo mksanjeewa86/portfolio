@@ -1,14 +1,28 @@
+import { useEffect } from "react";
 import { FaBars, FaTimes } from "../../assets/icons";
 import { logo } from "../../assets/images";
 import { useState } from "react";
 import { MenuItem } from "./MenuItem";
 import { MobileSocialIcon } from "./MobileSocialIcon";
 import { SocialIcon } from "./SocialIcon";
+import {
+  HOME,
+  ABOUT,
+  EDUCATION,
+  WORK,
+  SKILLS,
+  OTHER,
+  CONTACT,
+} from "../../router";
 
 export const Navbar: React.FC = () => {
   const [toggle, setToggle] = useState(false);
+  const [path, setPath] = useState("");
 
   const handleClick = () => setToggle(!toggle);
+  useEffect(() => {
+    setPath(window.location.pathname);
+  }, [path]);
 
   return (
     <nav className="w-full fixed h-[80px] bg-[#0a192f] px-4 flex justify-between items-center text-gray-300 z-10">
@@ -18,13 +32,33 @@ export const Navbar: React.FC = () => {
 
       {/* menu */}
       <ul className="hidden md:flex">
-        <MenuItem to="/" name="Home" />
-        <MenuItem to="about" name="About" />
-        <MenuItem to="history" name="Education" />
-        <MenuItem to="work" name="Work" />
-        <MenuItem to="skills" name="Skills" />
-        <MenuItem to="other" name="Other Activities" />
-        <MenuItem to="contact" name="Contact" />
+        <MenuItem active={path === HOME ? true : false} to="/" name="Home" />
+        <MenuItem
+          active={path === ABOUT ? true : false}
+          to="about"
+          name="About"
+        />
+        <MenuItem
+          active={path === EDUCATION ? true : false}
+          to="education"
+          name="Education"
+        />
+        <MenuItem active={path === WORK ? true : false} to="work" name="Work" />
+        <MenuItem
+          active={path === SKILLS ? true : false}
+          to="skills"
+          name="Skills"
+        />
+        <MenuItem
+          active={path === OTHER ? true : false}
+          to="other"
+          name="Other Activities"
+        />
+        <MenuItem
+          active={path === CONTACT ? true : false}
+          to="contact"
+          name="Contact"
+        />
       </ul>
 
       {/* hamberger */}
@@ -46,7 +80,7 @@ export const Navbar: React.FC = () => {
         <MenuItem
           type="mobile"
           click={handleClick}
-          to="history"
+          to="education"
           name="Education"
         />
         <MenuItem type="mobile" click={handleClick} to="work" name="Work" />
