@@ -4,9 +4,9 @@ import { IOther } from "../types";
 
 export const Other: React.FC = () => {
   return (
-    <div id="other" className="w-full bg-[#0a192f] text-gray-300">
+    <div id="other" className="w-full bg-[#0a192f] text-gray-300 min-h-screen">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pl-4">
+        <div className="pl-4 mt-20">
           <p className="text-4xl font-bold inline border-b-4 border-pink-600">
             Other Activities
           </p>

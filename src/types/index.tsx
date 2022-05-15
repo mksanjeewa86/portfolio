@@ -32,8 +32,8 @@ export type educationNode = {
 
 export type IMenu = {
   to: string;
+  type?: string;
   name: string;
-  class?: string;
   click?: () => void;
 };
 

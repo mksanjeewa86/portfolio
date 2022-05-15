@@ -39,7 +39,7 @@ export const Node: React.FC<workNode> = (node: workNode) => {
       <div className="p-2 bg-gray-800 rounded-xl pl-4 font-bold">
         Projects Involved
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 p-2">
         {node.projects?.map((project: Project) => {
           return <ProjectNode {...project} />;
         })}

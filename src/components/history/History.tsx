@@ -4,7 +4,7 @@ export const History: React.FC = () => {
   return (
     <div id="history" className="w-full bg-[#0a192f] text-gray-300">
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="max-w-[1000px] w-full grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="max-w-[1000px] w-full grid grid-cols-1 md:grid-cols-3 gap-4 mt-24">
           <div className="pl-4">
             <p className="text-4xl font-bold inline border-b-4 border-pink-600">
               Education

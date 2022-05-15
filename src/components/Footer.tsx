@@ -3,7 +3,7 @@ import { MobileSocialIcon } from "./navbar/MobileSocialIcon";
 
 export const Footer: React.FC = () => {
   return (
-    <div className="bg-[#0a192f] text-gray-300 w-full flex">
+    <footer className="bg-[#0a192f] text-gray-300 w-full">
       <div className="mx-auto p-4 flex flex-col justify-center w-full h-full bg-white">
         <MobileSocialIcon />
         <div className="text-center text-black">
@@ -23,6 +23,6 @@ export const Footer: React.FC = () => {
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };

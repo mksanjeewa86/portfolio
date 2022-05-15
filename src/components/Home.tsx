@@ -4,7 +4,7 @@ import { resume } from "../assets/documents";
 
 export const Home: React.FC = () => {
   return (
-    <div id="home" className="bg-[#0a192f] w-full h-screen">
+    <div id="home" className="bg-[#0a192f] w-full sm:h-screen">
       <div className="flex flex-col justify-center w-full h-full">
         <div className="max-w-[1000px] text-white grid grid-cols-1 sm:grid-cols-2 gap-8 mx-auto px-8">
           <div className="sm:hidden mt-32 sm:mt-0">
