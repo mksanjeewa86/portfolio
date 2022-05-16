@@ -2,6 +2,7 @@ import {
   BiMessageRoundedError,
   BiMessageCheck,
   BiMessageRoundedX,
+  AiFillSafetyCertificate,
 } from "../assets/icons";
 import { ModalProps } from "../types";
 
@@ -18,22 +19,34 @@ export const Modal: React.FC<ModalProps> = ({
           <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
             <div className="flex items-start p-5 border-b border-solid border-slate-200 rounded-t bg-gray-200">
               <p>
-                {type === "warning" ? (
-                  <BiMessageRoundedError className="w-7 h-7 mt-2 mr-2 text-yellow-500" />
-                ) : type === "success" ? (
-                  <BiMessageCheck className="w-7 h-7 mt-2 mr-2 text-green-500" />
-                ) : (
-                  <BiMessageRoundedX className="w-7 h-7 mt-2 mr-2 text-red-500" />
-                )}
+                {typeof description !== "object" &&
+                  (type === "warning" ? (
+                    <BiMessageRoundedError className="w-7 h-7 mt-2 mr-2 text-yellow-500" />
+                  ) : type === "success" ? (
+                    <BiMessageCheck className="w-7 h-7 mt-2 mr-2 text-green-500" />
+                  ) : (
+                    <BiMessageRoundedX className="w-7 h-7 mt-2 mr-2 text-red-500" />
+                  ))}
               </p>
-              <h3 className="text-2xl font-semibold">{title}</h3>
+              <h3 className="text-xl font-semibold text-blue-400">{title}</h3>
             </div>
-            <div className="relative p-6 flex-auto">
+            <div className="relative p-6 flex-auto max-h-[300px] overflow-y-auto">
               <p className="my-1 text-slate-500 text-lg leading-relaxed">
-                {description}
+                {typeof description === "string" && description}
+                {typeof description === "object" &&
+                  description.map((desc: any, index: any) => {
+                    return (
+                      <div className="text-blue-300" key={index}>
+                        <span className="flex flex-row">
+                          <AiFillSafetyCertificate className="text-green-500 mt-1 mr-2" />
+                          {desc}
+                        </span>
+                      </div>
+                    );
+                  })}
               </p>
             </div>
-            <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+            <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b bg-gray-200">
               {children}
             </div>
           </div>

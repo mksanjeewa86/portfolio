@@ -1,6 +1,10 @@
 import { educationNode } from "../../types";
+import { useState } from "react";
+import { Modal } from "..";
 
 export const Node: React.FC<educationNode> = (node: educationNode) => {
+  const [modal, setModal] = useState(false);
+
   return (
     <li className="mb-6 ml-4">
       <span className="flex absolute -left-3 justify-center items-center w-6 h-6 rounded-full ring-8 ring-gray-900 bg-blue-900">
@@ -84,6 +88,24 @@ export const Node: React.FC<educationNode> = (node: educationNode) => {
       <p className="mb-4 text-base font-normal text-white">
         {node.description}
       </p>
+      {node.details && (
+        <button
+          onClick={() => setModal(true)}
+          className="rounded-md bg-blue-600 p-2 w-[100px] h-[40px] hover:bg-blue-500 hover:scale-105 duration-500"
+        >
+          details
+        </button>
+      )}
+      {modal && (
+        <Modal title={node.title} description={node.details} type="warning">
+          <button
+            className="bg-red-500 text-white p-3 w-20 rounded-lg"
+            onClick={() => setModal(false)}
+          >
+            Close
+          </button>
+        </Modal>
+      )}
     </li>
   );
 };

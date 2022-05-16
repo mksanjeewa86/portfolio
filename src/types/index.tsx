@@ -28,6 +28,7 @@ export type educationNode = {
   time: string;
   post?: string;
   description: string;
+  details?: string[];
 };
 
 export type IMenu = {
@@ -46,7 +47,7 @@ export type ContactData = {
 
 export type ModalProps = {
   title: string;
-  description: string;
+  description: string | string[] | undefined;
   type: string;
   children?: JSX.Element | JSX.Element[];
 };

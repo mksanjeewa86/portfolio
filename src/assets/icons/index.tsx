@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { AiFillSafetyCertificate } from "react-icons/ai";
 import {
   BiMessageRoundedError,
   BiMessageCheck,
@@ -28,4 +29,5 @@ export {
   BiMessageRoundedError,
   BiMessageCheck,
   BiMessageRoundedX,
+  AiFillSafetyCertificate,
 };
