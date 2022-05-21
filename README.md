@@ -28,5 +28,3 @@ module.exports = {
 @tailwind components;
 @tailwind utilities;
 ```
-
-![Alt text](./screenshot.png?raw=true "Optional Title")
