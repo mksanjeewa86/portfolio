@@ -1,6 +1,6 @@
 import { malaka } from "../assets/images";
 import Typed from "react-typed";
-import { resume } from "../assets/documents";
+import { resume, resume_japanese, work_history } from "../assets/documents";
 
 export const Home: React.FC = () => {
   return (
@@ -11,11 +11,13 @@ export const Home: React.FC = () => {
             <img className="items-center" src={malaka} alt="" />
           </div>
           <div className="p-2 my-auto">
-            <p className="text-pink-600">Hi, my name is</p>
+            <p className="text-green-300 font-mono font-light text-sm">
+              Hi, my name is
+            </p>
             <h1 className="text-4xl sm:text-3xl lg:text-5xl font-bold text-[#ccd6f6]">
               Malaka Sanjeewa
             </h1>
-            <h2 className="text-xl sm:text-xl lg:text-2xl font-bold text-[#8892b0]">
+            <h2 className="text-xl sm:text-xl lg:text-2xl font-bold text-[#8892b0] font-mono">
               I'm a&nbsp;
               <Typed
                 strings={[
@@ -32,19 +34,34 @@ export const Home: React.FC = () => {
                 loop
               />
             </h2>
-            <p className="text-[#8892b0] py-4 max-w-[700px]">
+            <p className="text-[#8892b0] py-4 max-w-[700px] font-light font-mono">
               I’m a full-stack developer specializing in building (and
               occasionally designing) exceptional digital experiences.
               Currently, I’m focused on building responsive full-stack web
               applications.
             </p>
-            <div>
+            <div className="flex flex-row flex-wrap justify-start">
               <a
                 href={resume}
-                className="text-white border-2 px-6 py-3 my-2 flex items-center rounded-3xl hover:bg-pink-600 w-fit"
+                className="text-white border-2 border-green-900 px-6 py-2 m-1 flex items-center rounded-xl hover:scale-110 duration-500 font-mono font-light"
               >
-                Download CV
+                Resume
               </a>
+              <a
+                href={resume_japanese}
+                className="text-white border-2 border-green-900 px-6 py-2 m-1 flex items-center rounded-xl hover:scale-110 duration-500 font-mono font-light"
+              >
+                履歴書
+              </a>
+              <a
+                href={work_history}
+                className="text-white border-2 border-green-900 px-6 py-2 m-1 flex items-center rounded-xl hover:scale-110 duration-500 font-mono font-light"
+              >
+                職務経歴書
+              </a>
+            </div>
+            <div className="mt-2 ml-2 text-[10px] font-light font-mono opacity-50 text-green-200">
+              last update: 21st May, 2022
             </div>
           </div>
           <div className="hidden sm:flex justify-center items-center">

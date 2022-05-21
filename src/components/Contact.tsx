@@ -87,7 +87,7 @@ export const Contact: React.FC = () => {
         <input
           type="submit"
           value="Let's Collaborate"
-          className="text-white border-2 border-white hover:bg-pink-600 px-4 py-3 my-8 mx-auto flex items-center rounded-full"
+          className="text-white font-mono font-light text-sm border-2 border-green-200 hover:scale-105 duration-500 px-4 py-3 my-8 mx-auto flex items-center rounded-xl"
         />
       </form>
       {modal && (

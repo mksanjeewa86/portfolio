@@ -17,7 +17,7 @@ export const Skills: React.FC = () => {
         {keys.map((element: string, index: number) => {
           return (
             <>
-              <div className="uppercase text-xs font-bold border-b-2 border-gray-800">
+              <div className="uppercase text-xs font-light font-mono border-b-2 border-green-800 border-opacity-50 text-green-200 italic">
                 {element}
               </div>
               <div className="w-full grid grid-cols-3 sm:grid-cols-6 gap-4 text-center py-8">
@@ -25,19 +25,21 @@ export const Skills: React.FC = () => {
                   return (
                     <div
                       key={`skill_${ind}`}
-                      className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-lg"
+                      className="hover:scale-110 duration-500 rounded-lg"
                     >
-                      <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                      <div className="w-full rounded-full bg-gray-700">
                         <div
-                          className="bg-green-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                          className="bg-green-700 text-xs flex items-center p-1 flex-row font-light text-blue-100 text-center p-0.5 leading-none rounded-full"
                           style={{ width: `${Number(el.level) * 10}%` }}
                         >
-                          {`${Number(el.level) * 10}%`}
+                          <p className="text-orange-300 ml-2">{el.name}</p>
+                          &nbsp;
+                          <p>{`${Number(el.level) * 10}%`}</p>
                         </div>
                       </div>
-                      <p className="text-xs p-2 text-blue-400 font-bold italic">
+                      {/* <p className="text-xs font-light p-2 text-green-200 font-mono italic">
                         {el.name}
-                      </p>
+                      </p> */}
                     </div>
                   );
                 })}

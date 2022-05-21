@@ -18,7 +18,7 @@ export const About: React.FC = () => {
             </p>
           </div>
           <div>
-            <p>
+            <p className="font-mono font-light text-md">
               Highly motivated, skilled and hard working person with hands on
               experience on software development using React.js, Node.js,
               JavaScript, PHP and blockchain development on Ethereum and Tezos

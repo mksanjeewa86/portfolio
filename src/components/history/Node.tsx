@@ -72,7 +72,7 @@ export const Node: React.FC<educationNode> = (node: educationNode) => {
           </svg>
         )}
       </span>
-      <h3 className="flex items-center mb-1 text-lg font-semibold text-green-500">
+      <h3 className="flex items-center mb-1 font-light font-mono text-sm text-green-200">
         {node.web !== "" ? (
           <a target="_blank" rel="noreferrer" href={node.web}>
             {node.title}
@@ -82,16 +82,16 @@ export const Node: React.FC<educationNode> = (node: educationNode) => {
         )}
       </h3>
       <h2 className="text-blue-500 mb-2 font-bold">{node.post}</h2>
-      <time className="block mb-2 text-sm font-normal leading-none text-blue-500 italic">
+      <time className="block mb-2 text-sm font-light leading-none text-blue-300 italic">
         {node.time}
       </time>
-      <p className="mb-4 text-base font-normal text-white">
+      <p className="mb-4 font-light font-mono text-sm text-white">
         {node.description}
       </p>
       {node.details && (
         <button
           onClick={() => setModal(true)}
-          className="rounded-md bg-green-600 p-1 w-[100px] h-[35px] hover:bg-green-500 hover:scale-105 duration-500"
+          className="rounded-md border-2 border-green-200 p-1 w-[100px] h-[35px] hover:scale-105 duration-500 font-mono font-light text-sm"
         >
           details
         </button>
