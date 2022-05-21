@@ -59,6 +59,7 @@
             "PHP",
             "VSCode",
             "TortoiseGit",
+            "Node.js",
             "EC-CUBE"
           ],
           "description": "Sports goods EC site maintenance project"
@@ -72,6 +73,8 @@
             "Visual Studio 2019",
             "VSCode",
             ".NET Framework",
+            "Node.js",
+            "React.js",
             "Vue.js"
           ],
           "description": "・Maintenance・Documentation・Testing"
@@ -104,6 +107,32 @@
           "description": "Entrysheet System for Acro Holdings. Involved as a Full-stack developer."
         },
         {
+          "name": "EA Exam System",
+          "period": "2021 September ～ Now",
+          "tools": [
+            "MySQL",
+            "Node.js",
+            "Typescript",
+            "React.js",
+            "VSCode",
+            "AWS"
+          ],
+          "description": "EA Exam System for Acro Holdings. Involved as a Full-stack developer."
+        },
+        {
+          "name": "Online Exam System",
+          "period": "2021 September ～ Now",
+          "tools": [
+            "MySQL",
+            "Node.js",
+            "Typescript",
+            "React.js",
+            "VSCode",
+            "AWS"
+          ],
+          "description": "Online Exam System for Acrospera. Involved as a Full-stack developer."
+        },
+        {
           "name": "Blockchain Development",
           "period": "2022 January ～ Now",
           "tools": [
@@ -113,10 +142,11 @@
             "React.js",
             "VSCode",
             "AWS",
+            "GraphQL",
             "Next.js",
             "Tailwind CSS"
           ],
-          "description": "Blockchain development project for Ethereum and Tezos network.・DAO・Crowdfunding・NFT"
+          "description": "Blockchain development project for Ethereum and Tezos network. Involved as a Smart Contract Developer and Frontend Developer・DAO・Crowdfunding・NFT・Documentation・Testing"
         }
       ]
     }

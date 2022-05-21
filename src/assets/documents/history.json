@@ -89,7 +89,26 @@
       "title": "Diploma course in VB.Net Programming (First Division)",
       "time": "2008 July ~ 2008 December",
       "description": "National Youth Services Council, Maharagama, Sri Lanka",
-      "web": ""
+      "web": "",
+      "details": [
+        "Using Visual Studio.NET",
+        "Introduction to VB.NET",
+        "Programming Structure",
+        "Control Flow",
+        "Array",
+        "Sub Routines",
+        "Namespaces & Assemblies",
+        "Debugging VB.NET",
+        "Classes",
+        "Inheritance",
+        "Interfaces & Collections",
+        "Forms & Control",
+        "Single Document & Multiple Document",
+        "Event Driven Programming",
+        "Building Menus",
+        "ASP.NET",
+        "SQL Server 2000"
+      ]
     },
     {
       "title": "Diploma in Computer Software Engineering",
@@ -126,8 +145,12 @@
     {
       "title": "AWS Certified Solutions Architect - Associate",
       "time": "2022 April",
-      "description": "Score 722. Click title to verify the result",
-      "web": "https://www.credly.com/badges/607a54e8-543c-4859-87d2-8b5722ed0df7/public_url"
+      "description": "Show details for verify the exam result",
+      "web": "",
+      "details": [
+        "Score 722",
+        "https://www.credly.com/badges/607a54e8-543c-4859-87d2-8b5722ed0df7/public_url"
+      ]
     },
     {
       "title": "Japanese Language Proficiency Test - N2",

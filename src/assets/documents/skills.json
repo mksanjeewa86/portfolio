@@ -95,6 +95,14 @@
     {
       "name": "Tezos",
       "level": "6"
+    },
+    {
+      "name": "Solidity",
+      "level": "7"
+    },
+    {
+      "name": "LIGO",
+      "level": "7"
     }
   ],
   "cloud service": [
@@ -103,7 +111,7 @@
       "level": "9"
     }
   ],
-  "other tools": [
+  "others": [
     {
       "name": "GitHub",
       "level": "9"
@@ -114,6 +122,10 @@
     },
     {
       "name": "Backlog",
+      "level": "8"
+    },
+    {
+      "name": "GraphQL",
       "level": "8"
     }
   ]

@@ -91,7 +91,7 @@ export const Node: React.FC<educationNode> = (node: educationNode) => {
       {node.details && (
         <button
           onClick={() => setModal(true)}
-          className="rounded-md bg-blue-600 p-2 w-[100px] h-[40px] hover:bg-blue-500 hover:scale-105 duration-500"
+          className="rounded-md bg-green-600 p-1 w-[100px] h-[35px] hover:bg-green-500 hover:scale-105 duration-500"
         >
           details
         </button>
