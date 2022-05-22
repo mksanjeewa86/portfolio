@@ -4,6 +4,7 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import { ContactData } from "../types";
 import { serviceID, templateID, publicKey } from "../utils/config";
+import { MasterTitle } from "./common/MasterTitle";
 
 export const Contact: React.FC = () => {
   const [modal, setModal] = useState(false);
@@ -39,10 +40,8 @@ export const Contact: React.FC = () => {
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="pb-4 mt-20">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
-            Contact
-          </p>
-          <p className="text-gray-300 py-4">
+          <MasterTitle name="Contact" />
+          <p className="text-gray-300 py-4 font-mono text-sm">
             Submit the form below or shoot me an email - mksanjeewa86@gmail.com
           </p>
         </div>
@@ -93,11 +92,11 @@ export const Contact: React.FC = () => {
       {modal && (
         <Modal
           title="Thank you!"
-          description="thank you for your message"
+          description="Thank you for your message"
           type="success"
         >
           <button
-            className="bg-red-500 text-white p-3 w-20 rounded-lg"
+            className="bg-red-500 text-white p-2 w-20 rounded-lg hover:bg-red-600"
             onClick={() => {
               setModal(false);
               reset();

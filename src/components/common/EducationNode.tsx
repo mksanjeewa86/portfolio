@@ -2,7 +2,7 @@ import { educationNode } from "../../types";
 import { useState } from "react";
 import { Modal } from "..";
 
-export const Node: React.FC<educationNode> = (node: educationNode) => {
+export const EducationNode: React.FC<educationNode> = (node: educationNode) => {
   const [modal, setModal] = useState(false);
 
   return (
@@ -25,7 +25,7 @@ export const Node: React.FC<educationNode> = (node: educationNode) => {
               d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
             ></path>
           </svg>
-        ) : node.type === "exam" ? (
+        ) : node.type === "exams" ? (
           <svg
             className="w-6 h-6"
             fill="none"
@@ -81,8 +81,10 @@ export const Node: React.FC<educationNode> = (node: educationNode) => {
           node.title
         )}
       </h3>
-      <h2 className="text-blue-500 mb-2 font-bold">{node.post}</h2>
-      <time className="block mb-2 text-sm font-light leading-none text-blue-300 italic">
+      <h2 className="text-blue-500 mb-2 font-bold font-mono text-sm">
+        {node.post}
+      </h2>
+      <time className="block mb-2 text-sm font-light font-mono leading-none text-blue-300 italic">
         {node.time}
       </time>
       <p className="mb-4 font-light font-mono text-sm text-white">
@@ -99,7 +101,7 @@ export const Node: React.FC<educationNode> = (node: educationNode) => {
       {modal && (
         <Modal title={node.title} description={node.details} type="warning">
           <button
-            className="bg-red-500 text-white p-3 w-20 rounded-lg"
+            className="bg-red-500 hover:bg-red-600 text-white p-2 w-20 rounded-lg font-mono font-light text-sm"
             onClick={() => setModal(false)}
           >
             Close

@@ -64,3 +64,11 @@ export type ISkill = {
   name: string;
   level: string;
 };
+
+export type title = {
+  name: string;
+};
+
+export type HistoryType = {
+  type: string;
+};

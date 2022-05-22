@@ -1,5 +1,5 @@
 import { FaGithub } from "../assets/icons";
-import { MobileSocialIcon } from "./navbar/MobileSocialIcon";
+import { MobileSocialIcon } from "./common/MobileSocialIcon";
 
 export const Footer: React.FC = () => {
   return (

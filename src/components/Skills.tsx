@@ -1,5 +1,6 @@
 import { skills } from "../assets/documents";
 import { ISkill } from "../types";
+import { MasterTitle } from "./common/MasterTitle";
 
 export const Skills: React.FC = () => {
   const keys: string[] = Object.keys(skills);
@@ -9,10 +10,10 @@ export const Skills: React.FC = () => {
     <div id="skills" className="w-full bg-[#0a192f] text-gray-300">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="mt-24">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600">
-            Skillls
+          <MasterTitle name="Skills" />
+          <p className="py-4 italic font-mono text-sm">
+            Some of the technologies I've worked with
           </p>
-          <p className="py-4">Some of the technologies I've worked with</p>
         </div>
         {keys.map((element: string, index: number) => {
           return (

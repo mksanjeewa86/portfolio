@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { FaBars, FaTimes } from "../../assets/icons";
-import { logo } from "../../assets/images";
+import { FaBars, FaTimes } from "../assets/icons";
+import { logo } from "../assets/images";
 import { useState } from "react";
-import { MenuItem } from "./MenuItem";
-import { MobileSocialIcon } from "./MobileSocialIcon";
-import { SocialIcon } from "./SocialIcon";
+import { MenuItem } from "./common/MenuItem";
+import { MobileSocialIcon } from "./common/MobileSocialIcon";
+import { SocialIcon } from "./common/SocialIcon";
 import {
   HOME,
   ABOUT,
@@ -13,7 +13,7 @@ import {
   SKILLS,
   OTHER,
   CONTACT,
-} from "../../router";
+} from "../router";
 
 export const Navbar: React.FC = () => {
   const [toggle, setToggle] = useState(false);
@@ -52,7 +52,7 @@ export const Navbar: React.FC = () => {
         <MenuItem
           active={path === OTHER ? true : false}
           to="other"
-          name="Other Activities"
+          name="Extra Activities"
         />
         <MenuItem
           active={path === CONTACT ? true : false}
@@ -89,7 +89,7 @@ export const Navbar: React.FC = () => {
           type="mobile"
           click={handleClick}
           to="other"
-          name="Other Activiets"
+          name="Extra Activities"
         />
         <MenuItem
           type="mobile"

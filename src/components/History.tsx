@@ -1,4 +1,5 @@
-import { Education, Course, Exams } from ".";
+import { HistoryNode } from "./common/HistoryNode";
+import { MasterTitle } from "./common/MasterTitle";
 
 export const History: React.FC = () => {
   return (
@@ -6,22 +7,16 @@ export const History: React.FC = () => {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-1 md:grid-cols-3 gap-4 mt-24">
           <div className="pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-pink-600">
-              Education
-            </p>
-            {<Education />}
+            <MasterTitle name="Education" />
+            <HistoryNode type="education" />
           </div>
           <div className="pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-pink-600">
-              Course
-            </p>
-            {<Course />}
+            <MasterTitle name="Course" />
+            <HistoryNode type="course" />
           </div>
           <div className="pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-pink-600">
-              Exam
-            </p>
-            {<Exams />}
+            <MasterTitle name="Exam" />
+            <HistoryNode type="exams" />
           </div>
         </div>
       </div>

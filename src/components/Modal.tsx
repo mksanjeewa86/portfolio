@@ -17,7 +17,7 @@ export const Modal: React.FC<ModalProps> = ({
       <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
         <div className="relative w-auto my-6 mx-auto max-w-xl min-w-min">
           <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-            <div className="flex items-start p-5 border-b border-solid border-slate-200 rounded-t bg-gray-200">
+            <div className="flex items-start p-4 border-b border-solid border-slate-200 rounded-t bg-green-700">
               <p>
                 {typeof description !== "object" &&
                   (type === "warning" ? (
@@ -28,7 +28,9 @@ export const Modal: React.FC<ModalProps> = ({
                     <BiMessageRoundedX className="w-7 h-7 mt-2 mr-2 text-red-500" />
                   ))}
               </p>
-              <h3 className="text-xl font-semibold text-blue-400">{title}</h3>
+              <h3 className="text-white font-semibold font-mono text-md mt-2">
+                {title}
+              </h3>
             </div>
             <div className="relative p-6 flex-auto max-h-[300px] overflow-y-auto">
               <p className="my-1 text-slate-500 text-lg leading-relaxed">
@@ -36,7 +38,10 @@ export const Modal: React.FC<ModalProps> = ({
                 {typeof description === "object" &&
                   description.map((desc: any, index: any) => {
                     return (
-                      <div className="text-blue-300" key={index}>
+                      <div
+                        className="text-green-600 font-light font-mono text-sm"
+                        key={index}
+                      >
                         <span className="flex flex-row">
                           <AiFillSafetyCertificate className="text-green-500 mt-1 mr-2" />
                           {desc}
@@ -46,7 +51,7 @@ export const Modal: React.FC<ModalProps> = ({
                   })}
               </p>
             </div>
-            <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b bg-gray-200">
+            <div className="flex items-center justify-end p-3 border-t border-solid border-slate-200 rounded-b bg-gray-200">
               {children}
             </div>
           </div>

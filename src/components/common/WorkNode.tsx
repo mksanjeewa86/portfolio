@@ -1,7 +1,7 @@
 import { ProjectNode } from "./ProjectNode";
 import { workNode, Project } from "../../types";
 
-export const Node: React.FC<workNode> = (node: workNode) => {
+export const WorkNode: React.FC<workNode> = (node: workNode) => {
   return (
     <li className="mb-10 ml-6">
       <span className="flex absolute -left-3 justify-center items-center w-6 h-6 rounded-full ring-8 ring-gray-900 bg-green-700">
@@ -20,7 +20,7 @@ export const Node: React.FC<workNode> = (node: workNode) => {
           ></path>
         </svg>
       </span>
-      <h3 className="flex items-center mb-1 text-lg font-semibold text-blue-600">
+      <h3 className="flex items-center mb-1 text-md font-semibold text-blue-600 font-mono">
         {node.web !== "" ? (
           <a target="_blank" rel="noreferrer" href={node.web}>
             {node.title}
@@ -29,11 +29,11 @@ export const Node: React.FC<workNode> = (node: workNode) => {
           node.title
         )}
       </h3>
-      <h2 className="text-blue-500 mb-2 font-bold">{node.post}</h2>
-      <time className="block mb-2 text-sm font-normal leading-none text-gray-500 italic">
+      <h2 className="text-blue-500 mb-2 font-light">{node.post}</h2>
+      <time className="block mb-2 text-sm font-light font-mono leading-none text-gray-500 italic">
         {node.time}
       </time>
-      <p className="mb-4 text-base font-normal text-gray-400">
+      <p className="mb-4 font-normal text-gray-400 font-mono text-sm">
         {node.description}
       </p>
       <div className="p-2 bg-gray-800 rounded-xl pl-4 font-bold">
