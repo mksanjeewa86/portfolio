@@ -22,15 +22,18 @@ import {
   CONTACT,
   MAINTENANCE,
 } from "./router";
+import { useSelector } from "react-redux";
 
 function App() {
+  const { value } = useSelector((state: any) => state.lang);
+
   return (
     <div>
       <Navbar />
       <BrowserRouter>
         <Routes>
-          <Route path={HOME} element={<Home />} />
-          <Route path={ABOUT} element={<About />} />
+          <Route path={HOME} element={<Home value={value} />} />
+          <Route path={ABOUT} element={<About value={value} />} />
           <Route path={EDUCATION} element={<History />} />
           <Route path={WORK} element={<Work />} />
           <Route path={SKILLS} element={<Skills />} />

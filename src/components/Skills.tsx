@@ -24,21 +24,25 @@ export const Skills: React.FC = () => {
               >
                 {element}
               </div>
-              <div className="w-full grid grid-cols-3 sm:grid-cols-6 gap-4 text-center py-8">
+              <div className="w-full grid grid-cols-3 md:grid-cols-4 gap-4 text-center py-8 font-mono text-sm font-light italic">
                 {values[index].map((el: ISkill, ind: number) => {
                   return (
                     <div
                       key={`skill_${new Date().getTime()}_${ind}`}
                       className="hover:scale-110 duration-500 rounded-lg"
                     >
-                      <div className="w-full rounded-full bg-gray-700">
-                        <div
-                          className="bg-green-700 text-xs flex items-center p-1 flex-row font-light text-blue-100 text-center p-0.5 leading-none rounded-full"
-                          style={{ width: `${Number(el.level) * 10}%` }}
-                        >
-                          <p className="text-orange-300 ml-2">{el.name}</p>
-                          &nbsp;
-                          <p>{`${Number(el.level) * 10}%`}</p>
+                      <div className="rounded-xl p-1 border-green-200 border-[1px]">
+                        <p className="text-white">{el.name}</p>
+
+                        <div className="w-full rounded-full bg-gray-700 mb-1">
+                          <div
+                            className="bg-green-700 text-xs flex items-center flex-row font-light text-blue-100 text-center p-0.5 leading-none rounded-full"
+                            style={{ width: `${Number(el.level) * 10}%` }}
+                          >
+                            <p className="ml-2 p-[0.5px]">{`${
+                              Number(el.level) * 10
+                            }%`}</p>
+                          </div>
                         </div>
                       </div>
                     </div>
