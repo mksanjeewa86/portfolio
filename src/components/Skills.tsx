@@ -24,7 +24,7 @@ export const Skills: React.FC = () => {
               >
                 {element}
               </div>
-              <div className="w-full grid grid-cols-3 md:grid-cols-4 gap-4 text-center py-8 font-mono text-sm font-light italic">
+              <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center py-8 font-mono text-sm font-light italic">
                 {values[index].map((el: ISkill, ind: number) => {
                   return (
                     <div
