@@ -14,6 +14,7 @@ import {
   OTHER,
   CONTACT,
 } from "../router";
+import { LangSelector } from "./common/LangSelector";
 
 export const Navbar: React.FC = () => {
   const [toggle, setToggle] = useState(false);
@@ -59,11 +60,15 @@ export const Navbar: React.FC = () => {
           to="contact"
           name="Contact"
         />
+        <LangSelector />
       </ul>
 
       {/* hamberger */}
-      <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
-        {!toggle ? <FaBars size={30} /> : <FaTimes size={30} />}
+      <div className="flex flex-row md:hidden">
+        <LangSelector type="mobile" />
+        <div onClick={handleClick} className="z-10 cursor-pointer">
+          {!toggle ? <FaBars size={30} /> : <FaTimes size={30} />}
+        </div>
       </div>
 
       {/* mobile menu */}

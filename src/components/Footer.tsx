@@ -17,6 +17,7 @@ export const Footer: React.FC = () => {
           </div>
           <ul className="flex flex-row text-blue-300 flex-wrap justify-center font-light font-mono text-sm">
             <li>React.js</li>
+            <li>@reduxjs/toolkit</li>
             <li>Typescript</li>
             <li>S3</li>
             <li>CloudFront</li>

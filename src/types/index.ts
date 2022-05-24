@@ -72,3 +72,7 @@ export type title = {
 export type HistoryType = {
   type: string;
 };
+
+export type LangType = {
+  type?: string;
+};

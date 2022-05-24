@@ -18,14 +18,17 @@ export const Skills: React.FC = () => {
         {keys.map((element: string, index: number) => {
           return (
             <>
-              <div className="uppercase text-xs font-light font-mono border-b-2 border-green-800 border-opacity-50 text-green-200 italic">
+              <div
+                key={`${element}_${new Date().getTime()}_${index}`}
+                className="uppercase text-xs font-light font-mono border-b-2 border-green-800 border-opacity-50 text-green-200 italic"
+              >
                 {element}
               </div>
               <div className="w-full grid grid-cols-3 sm:grid-cols-6 gap-4 text-center py-8">
                 {values[index].map((el: ISkill, ind: number) => {
                   return (
                     <div
-                      key={`skill_${ind}`}
+                      key={`skill_${new Date().getTime()}_${ind}`}
                       className="hover:scale-110 duration-500 rounded-lg"
                     >
                       <div className="w-full rounded-full bg-gray-700">
@@ -38,9 +41,6 @@ export const Skills: React.FC = () => {
                           <p>{`${Number(el.level) * 10}%`}</p>
                         </div>
                       </div>
-                      {/* <p className="text-xs font-light p-2 text-green-200 font-mono italic">
-                        {el.name}
-                      </p> */}
                     </div>
                   );
                 })}
