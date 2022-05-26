@@ -66,8 +66,8 @@ export const Home = (value: any) => {
             </div>
             <div className="mt-2 ml-2 text-[10px] font-light font-mono opacity-50 text-green-200">
               {value.value === "en"
-                ? "last update: 24th May, 2022"
-                : "更新日：2022年05月24日"}
+                ? "last update: 26th May, 2022"
+                : "更新日：2022年05月26日"}
             </div>
           </div>
           <div className="hidden sm:flex justify-center items-center">
