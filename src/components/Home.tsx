@@ -17,7 +17,7 @@ export const Home = (value: any) => {
             <h1 className="text-4xl sm:text-3xl lg:text-5xl font-bold text-[#ccd6f6]">
               Malaka Sanjeewa
             </h1>
-            <h2 className="text-xl sm:text-xl lg:text-2xl font-bold text-[#8892b0] font-mono">
+            <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#8892b0] font-mono">
               I'm a&nbsp;
               <Typed
                 strings={[
